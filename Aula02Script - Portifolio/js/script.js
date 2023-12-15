@@ -20,10 +20,10 @@ function listarFront() {
                     <h5 class="card-title">${item.titulo}</h5>
                     <p class="card-text">${item.descricao}</p>
                     <div>
-                        <a href="${item.git}" class="btn btn-primary">Github</a>
-                        <a href="${item.demo}" class="btn btn-primary">Demo</a>
+                        <a href=${item.git} class="btn btn-primary">Github</a>
+                        <a href=${item.demo} class="btn btn-primary">Demo</a>
                     </div>
-                    </div> 
+                    </div>
                 </div>
             `
                 front.appendChild(card)
@@ -32,7 +32,6 @@ function listarFront() {
 }
 
 listarFront()
-
 
 function listarBack() {
     fetch('../../projetos.json')
@@ -48,10 +47,10 @@ function listarBack() {
                     <h5 class="card-title">${item.titulo}</h5>
                     <p class="card-text">${item.descricao}</p>
                     <div>
-                        <a href="${item.git}" class="btn btn-primary">Github</a>
-                        <a href="${item.demo}" class="btn btn-primary">Demo</a>
+                        <a href=${item.git} class="btn btn-primary">Github</a>
+                        <a href=${item.demo} class="btn btn-primary">Demo</a>
                     </div>
-                    </div> 
+                    </div>
                 </div>
             `
                 back.appendChild(card)
@@ -60,3 +59,4 @@ function listarBack() {
 }
 
 listarBack()
+
